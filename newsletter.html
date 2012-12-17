@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width" />
 
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>ZURBemails</title>
+<title>*|MC:SUBJECT|*</title>
 	
 <style type="text/css">
 
@@ -250,8 +250,8 @@ ul.sidebar li a h1,ul.sidebar li a h2,ul.sidebar li a h3,ul.sidebar li a h4,ul.s
 			<div class="content">
 				<table bgcolor="#999999" >
 					<tr>
-						<td><img src="http://placehold.it/200x50/" /></td>
-						<td align="right"><h6 class="collapse">Newsletter</h6></td>
+						<td><img mc:allowdesigner mc:allowtext mc:edit="header_image" style="max-width: 200px;" /></td>
+						<td align="right"><h6 mc:allowdesigner mc:edit="tagline" class="collapse">Newsletter</h6></td>
 					</tr>
 				</table>
 			</div><!-- /content -->
@@ -273,84 +273,60 @@ ul.sidebar li a h1,ul.sidebar li a h2,ul.sidebar li a h3,ul.sidebar li a h4,ul.s
 					<tr>
 						<td>
 							
-							<h1>Great Scott!</h1>
-							<p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et.</p>
+							<h1>*|MC:SUBJECT|*</h1>
+							<p mc:edit="leading-text" class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et.</p>
 							
 							<!-- A Real Hero (and a real human being) -->
-							<p><img src="http://placehold.it/600x300" /></p><!-- /hero -->
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+							<p><img mc:edit="hero-image" /></p><!-- /hero -->
+							<p mc:edit="main">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 						</td>
 					</tr>
 				</table>
 			</div><!-- /content -->
 			
 			<!-- content -->
-			<div class="content">
+			<div class="content" mc:repeatable>
 				
 				<table bgcolor="">
 					<tr>
-						<td class="small" width="20%" style="vertical-align: top; padding-right:10px;"><img src="http://placehold.it/75x75" /></td>
+						<td class="small" width="20%" style="vertical-align: top; padding-right:10px;"><img mc:edit="post-thumbnail" /></td>
 						<td>
-							<h4>Title Ipsum <small>This is a note.</small></h4>
-							<p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-							<a class="btn">Clickity Click &raquo;</a>
+							<h4 mc:edit="post-title">Title Ipsum <small>This is a note.</small></h4>
+							<p mc:edit="post-excerpt" class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+							<a mc:edit="post-link" class="btn">Clickity Click &raquo;</a>
 						</td>
 					</tr>
 				</table>
 			
 			</div><!-- /content -->
 			
-			<!-- content -->
-			<div class="content"><table bgcolor="">
-				<tr>
-					<td class="small" width="20%" style="vertical-align: top; padding-right:10px;"><img src="http://placehold.it/75x75" /></td>
-					<td>
-						<h4>Title Ipsum <small>This is a note.</small></h4>
-						<p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-						<a class="btn">Clickity Click &raquo;</a>
-					</td>
-				</tr>
-			</table></div><!-- /content -->
-			
-			<!-- content -->
 			<div class="content"><table bgcolor="">
 				<tr>
 					<td>
 						
 						<!-- Callout Panel -->
-						<p class="callout">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt. <a href="#">Do it Now! &raquo;</a>	</p><!-- /callout panel -->
+						<p mc:edit="call-out-panel" class="callout">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt. <a href="#">Do it Now! &raquo;</a>	</p><!-- /callout panel -->
 						
 					</td>
 				</tr>
 			</table></div><!-- /content -->
-			
-			<!-- content -->
-			<div class="content"><table bgcolor="">
-				<tr>
-					<td class="small" width="20%" style="vertical-align: top; padding-right:10px;"><img src="http://placehold.it/75x75" /></td>
-					<td>
-						<h4>Title Ipsum <small>This is a note.</small></h4>
-						<p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-						<a class="btn">Clickity Click &raquo;</a>
-					</td>
-				</tr>
-			</table></div><!-- /content -->
-			
-			<!-- content -->
-			<div class="content"><table bgcolor="">
-				<tr>
-					<td class="small" width="20%" style="vertical-align: top; padding-right:10px;"><img src="http://placehold.it/75x75" /></td>
-					<td>
-						<h4>Title Ipsum <small>This is a note.</small></h4>
-						<p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-						<a class="btn">Clickity Click &raquo;</a>
-				
-					</td>
-				</tr>
-			</table></div><!-- /content -->
-			
-			<!-- content -->
-			<div class="content">
+
+            <div class="content" mc:repeatable>
+
+                <table bgcolor="">
+                    <tr>
+                        <td class="small" width="20%" style="vertical-align: top; padding-right:10px;"><img mc:edit="post-thumbnail" /></td>
+                        <td>
+                            <h4 mc:edit="post-title">Title Ipsum <small>This is a note.</small></h4>
+                            <p mc:edit="post-excerpt" class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                            <a mc:edit="post-link" class="btn">Clickity Click &raquo;</a>
+                        </td>
+                    </tr>
+                </table>
+
+            </div><!-- /content -->
+
+            <div class="content">
 				<table bgcolor="">
 					<tr>
 						<td>
@@ -364,11 +340,10 @@ ul.sidebar li a h1,ul.sidebar li a h2,ul.sidebar li a h3,ul.sidebar li a h4,ul.s
 										<div class="column">
 											<table bgcolor="" cellpadding="" align="left">
 										<tr>
-											<td>				
+											<td mc:edit="std_social">
 												
 												<h5 class="">Connect with Us:</h5>
-												<p class=""><a href="#" class="soc-btn fb">Facebook</a> <a href="#" class="soc-btn tw">Twitter</a> <a href="#" class="soc-btn gp">Google+</a></p>
-						
+												<p class=""><a mc:edit="facebook" class="soc-btn fb">Facebook</a> <a mc:edit="twitter" href="#" class="soc-btn tw">Twitter</a> <a mc:edit="google-plus" href="#" class="soc-btn gp">Google+</a></p>
 												
 											</td>
 										</tr>
@@ -381,9 +356,12 @@ ul.sidebar li a h1,ul.sidebar li a h2,ul.sidebar li a h3,ul.sidebar li a h4,ul.s
 										<tr>
 											<td>				
 																			
-												<h5 class="">Contact Info:</h5>												
-												<p>Phone: <strong>408.341.0600</strong><br/>
-                Email: <strong><a href="emailto:hseldon@trantor.com">hseldon@trantor.com</a></strong></p>
+												<h5 class="">Contact Info:</h5>
+                                                <p>Phone: <strong>*|LIST:PHONE|*</strong>
+                                                    <br/>
+                                                    Mailing address:
+                                                    <br />
+                                                    *|HTML:LIST_ADDRESS_HTML|*</p>
                 
 											</td>
 										</tr>
@@ -418,10 +396,14 @@ ul.sidebar li a h1,ul.sidebar li a h2,ul.sidebar li a h3,ul.sidebar li a h4,ul.s
 					<table>
 						<tr>
 							<td align="center">
-								<p>
-									<a href="#">Terms</a> |
-									<a href="#">Privacy</a> |
-									<a href="#"><unsubscribe>Unsubscribe</unsubscribe></a>
+								<p>                                    
+                                    *|LIST:DESCRIPTION|*
+                                    <br />
+                                    <a href="*|FORWARD|*">Forward</a> this email to a friend |
+                                    <a href="*|UPDATE_PROFILE|*">Update your profile</a> |
+                                    <a href="*|UNSUB|*">Unsubscribe</a> *|EMAIL|* from this list.
+                                    <br />
+                                    <em>Copyright &copy; *|CURRENT_YEAR|* *|LIST:COMPANY|*, All rights reserved.</em>
 								</p>
 							</td>
 						</tr>
@@ -432,6 +414,9 @@ ul.sidebar li a h1,ul.sidebar li a h2,ul.sidebar li a h3,ul.sidebar li a h4,ul.s
 		<td></td>
 	</tr>
 </table><!-- /FOOTER -->
+
+
+
 
 </body>
 </html>
